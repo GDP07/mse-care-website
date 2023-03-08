@@ -1,6 +1,6 @@
 /* Base */
 * {
-  scroll-padding-top: 100px;
+  scroll-padding-top: 70px;
   scroll-behavior: smooth;
 }
 
@@ -13,6 +13,7 @@ body {
   color: gray;
   font-weight: 400;
   font-size: 1rem;
+  overflow-x: hidden;
 }
 
 ::-moz-selection {
@@ -265,6 +266,11 @@ body:after {
   .hover-bg-enlarge .bg-image-md-height {
     height: 300px !important;
   }
+
+  .overidden-logo {
+    width: 50px;
+  }
+  
 }
 
 .bg-image {
@@ -886,6 +892,8 @@ body:after {
   border-top: none;
   padding: 20px;
   text-align: center;
+  height: 200px;
+  text-overflow: ellipsis;
 }
 .service .service-inner h3 {
   font-size: 20px;
@@ -1091,6 +1099,10 @@ body:after {
   font-style: italic;
 }
 
+.icon-menu:before{
+  color: #000;
+}
+
 .comment-form-wrap {
   clear: both;
 }
@@ -1207,6 +1219,7 @@ figure figcaption {
 }
 
 .overidden-logo {
-  width: 100px;
-  /* height: 60px; */
+  width: 70px;
 }
+
+

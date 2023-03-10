@@ -876,7 +876,7 @@ body:after {
 }
 
 .site-section {
-  padding: 90px 0;
+  padding: 60px 0;
 }
 
 .service {
@@ -886,6 +886,7 @@ body:after {
   -webkit-transition: 0.3s all ease;
   -o-transition: 0.3s all ease;
   transition: 0.3s all ease;
+  overflow: hidden;
 }
 .service .service-inner {
   border: 1px solid rgba(0, 0, 0, 0.05);
@@ -1221,5 +1222,4 @@ figure figcaption {
 .overidden-logo {
   width: 70px;
 }
-
 

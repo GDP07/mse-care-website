@@ -29,7 +29,7 @@
 
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" id="home">
     <div id="overlayer"></div>
     <div class="loader">
       <div class="spinner-border text-primary" role="status">
@@ -59,9 +59,10 @@
             <div class="col-12 col-md-10 d-none d-xl-block">
               <nav class="site-navigation position-relative text-right" role="navigation">
                 <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                  <li><a href="index.html" class="active nav-link">Home</a></li>
+                  <li><a href="#home" class="active nav-link">Home</a></li>
                   <li><a href="#services" class="active nav-link">Services</a></li>
                   <li><a href="#about" class="nav-link">About Us</a></li>
+                  <li><a href="#training" class="nav-link">Training</a></li>
                   <li><a href="#chooseus" class="nav-link">Why Choose Us</a></li>
                   <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
@@ -95,6 +96,7 @@
           </div>
         </div>
       </div>
+
       <div class="site-section" >
         <div class="container" id="services">
           <div class="row">
@@ -156,7 +158,7 @@
               </p>
             </div>
           </div>
-          <div class="row">
+          <!-- <div class="row">
             <div class="col-lg-3">
               <div class="team text-center">
                 <img src="images/staff_1.jpg" alt="" class="img-fluid" />
@@ -189,9 +191,25 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, praesentium?</p>
               </div>
             </div>
+          </div> -->
+        </div>
+      </div>
+
+
+      <div class="slide-item overlay" style="background-image: url('./images/sop/traininf.jpg')" id="training">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 align-self-center">
+              <h1 class="heading mb-3">Training for caregivers.</h1>
+              <p class="lead text-white mb-5">
+                As a caregiving training program provider, our goal is to equip individuals with the necessary knowledge and skills to provide compassionate care to those in need.
+              </p>
+              <p><a href="tel:+94754061069" class="btn btn-primary">Contact us</a></p>
+            </div>
           </div>
         </div>
       </div>
+
 
       <div class="site-section bg-primary count-numbers">
         <div class="container">
@@ -251,7 +269,7 @@
                     <span class="img-wrap">
                       <img src="images/svg/svg/005-elderly-2.svg" alt="Image" class="img-fluid" />
                     </span>
-                    <h3>Expert Nursing Staff</h3>
+                    <h3>Friendly Environment</h3>
                   </div>
                 </div>
                 <div class="col-lg-4">
@@ -259,7 +277,7 @@
                     <span class="img-wrap">
                       <img src="images/svg/svg/004-nurse.svg" alt="Image" class="img-fluid" />
                     </span>
-                    <h3>Expert Nursing Staff</h3>
+                    <h3>Comfortability</h3>
                   </div>
                 </div>
               </div>

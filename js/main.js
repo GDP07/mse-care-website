@@ -373,7 +373,6 @@ jQuery(document).ready(function ($) {
   };
   counter();
 
-
   let changeimgindex = 1;
   let images = [
     "./images/sop/banner.jpg",
@@ -382,35 +381,34 @@ jQuery(document).ready(function ($) {
     "./images/sop/banner5.jpg",
   ];
 
-  $.each(images, function(i, val) {
-    $('<img/>').attr('src', val).appendTo('body').hide();
+  $.each(images, function (i, val) {
+    $("<img/>").attr("src", val).appendTo("body").hide();
   });
 
   function changeImg() {
-  if (changeimgindex == 4) {
-    changeimgindex = 0;
+    if (changeimgindex == 4) {
+      changeimgindex = 0;
+    }
+
+    const imageSource = `url(${images[changeimgindex]})`;
+
+    const sliderMain = $("#sliderMain");
+
+    sliderMain.css({
+      "background-image": imageSource,
+      "-webkit-transition": "background-image 1s ease-out",
+      "-moz-transition": "background-image 1s ease-out",
+      "-o-transition": "background-image 1s ease-out",
+      transition: "background-image 1s ease-out",
+      "background-color": "lightgray",
+    });
+
+    setTimeout(() => {
+      sliderMain.css("background-color", "transparent");
+    }, 1000);
+
+    changeimgindex++;
   }
-
-  const imageSource = `url(${images[changeimgindex]})`;
-
-  const sliderMain = $("#sliderMain");
-
-  sliderMain.css({
-    "background-image": imageSource,
-    "-webkit-transition": "background-image 1s ease-out",
-    "-moz-transition": "background-image 1s ease-out",
-    "-o-transition": "background-image 1s ease-out",
-    "transition": "background-image 1s ease-out",
-    "background-color": "lightgray",
-  });
-
-  setTimeout(() => {
-    sliderMain.css("background-color", "transparent");
-  }, 1000);
-
-  changeimgindex++;
-}
-
 
   setInterval(changeImg, 5000);
 });
